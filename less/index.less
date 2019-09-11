@@ -179,7 +179,7 @@ header{
 
 		p{
 			padding-bottom: @padpx;
-		}
+		}//closes p
 	}//closes mid-left
 
 	.mid-right{
@@ -194,10 +194,29 @@ header{
 		ul{
 			li{
 				padding-bottom: @padpx;
-			}
-		}
+			}//closes li
+		}//closes ul
 		
 	}//closes mid-right
 }//close mid-container
+
+.bottom-container{
+	.centering();
+	
+	h2{
+		.h2styles();
+		padding-left: @padpx
+	}//closes h2
+
+	.work-history{
+		padding-left: @padpx;
+
+		table{
+			th{
+				
+			}
+		}
+	}
+}//closes bottom-container
 
 
