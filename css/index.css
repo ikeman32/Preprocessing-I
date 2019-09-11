@@ -151,9 +151,15 @@ header nav a {
   padding: 20px;
   text-decoration: none;
 }
-.about div {
+.about-container {
   width: 90%;
   margin: 0 auto;
-  background-color: lightgray;
+  background-color: #edf2f7;
   padding: 20px;
+}
+.about-container .image {
+  padding: 20px 0;
+}
+.about-container .image img {
+  max-width: 30%;
 }

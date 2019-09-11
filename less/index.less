@@ -57,7 +57,7 @@ html, body {
 	height: 100%;
 }
 
-@backcolor: lightgray;
+@backcolor: #edf2f7;
 
 .flexCenter(){
 	display: flex;
@@ -94,11 +94,18 @@ header{
 	
 }//closes header
 
-.about{
-	div{
-		.centering();
-		background-color: @backcolor;
-		padding: 20px;
-	}
-}
+
+.about-container{
+	.centering();
+	background-color: @backcolor;
+	padding: 20px;
+
+	.image{
+		padding: 20px 0;
+		img{
+			max-width: 30%;
+		}//closes img
+	}//closes image
+}//closes about-container
+
 
