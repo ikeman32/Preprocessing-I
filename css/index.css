@@ -176,10 +176,13 @@ header nav a {
   font-family: 'Fira Sans', sans-serif;
   padding-bottom: 20px;
 }
-.about-container p {
+.about-container #tech {
   border-bottom: 1px solid black;
   padding-bottom: 20px;
   font-size: 1.4rem;
+}
+.about-container #teamup {
+  margin-top: 20px;
 }
 .about-container button {
   margin-top: 20px;
@@ -190,4 +193,34 @@ header nav a {
 }
 .about-container button:hover {
   background-color: blueviolet;
+}
+.mid-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: first baseline;
+}
+.mid-container .mid-left {
+  padding: 20px;
+  max-width: 40%;
+}
+.mid-container .mid-left h2 {
+  font-size: 1.8rem;
+  font-family: 'Fira Sans', sans-serif;
+  padding-bottom: 20px;
+}
+.mid-container .mid-left p {
+  padding-bottom: 20px;
+}
+.mid-container .mid-right {
+  padding: 20px;
+  margin-left: 10%;
+}
+.mid-container .mid-right h2 {
+  font-size: 1.8rem;
+  font-family: 'Fira Sans', sans-serif;
+  padding-bottom: 20px;
+}
+.mid-container .mid-right ul li {
+  padding-bottom: 20px;
 }

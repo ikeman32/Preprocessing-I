@@ -80,9 +80,26 @@ html, body {
 	justify-content: flex-end;
 }
 
+.flexRow(){
+	display:flex;
+	justify-content: first baseline
+}
+
 .centering(){
 	width: 90%;
 	margin: 0 auto;
+}
+
+.h1styles(){
+	font-size: 2.2rem;
+	font-family: @header-font;
+	padding-bottom: @padpx;
+}
+
+.h2styles(){
+	font-size: 1.8rem;
+	font-family: @header-font;
+	padding-bottom: @padpx;
 }
 
 //Styles
@@ -121,17 +138,19 @@ header{
 	}//closes image
 
 	h1{
-		font-size: 2.2rem;
-		font-family: @header-font;
-		padding-bottom: @padpx;
+		.h1styles();
 	}//closes h1
 
-	p{
+	#tech{
 		
 		border-bottom: 1px solid black;
 		padding-bottom: @padpx;
 		font-size: 1.4rem;
-	}//closes p
+	}//closes tech
+
+	#teamup{
+		margin-top: @padpx;
+	}
 
 	button{
 		margin-top: @padpx;
@@ -145,5 +164,40 @@ header{
 		background-color: blueviolet;
 	}//closes hover
 }//closes about-container
+
+.mid-container{
+	.centering();
+	.flexRow();
+
+	.mid-left{
+		.stdPadding();
+		max-width: 40%;
+		
+		h2{
+			.h2styles();
+		}//closes h2
+
+		p{
+			padding-bottom: @padpx;
+		}
+	}//closes mid-left
+
+	.mid-right{
+		.stdPadding();
+
+		margin-left: 10%;
+
+		h2{
+			.h2styles();
+		}//closes h2
+
+		ul{
+			li{
+				padding-bottom: @padpx;
+			}
+		}
+		
+	}//closes mid-right
+}//close mid-container
 
 
