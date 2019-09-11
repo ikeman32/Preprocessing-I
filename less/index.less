@@ -50,10 +50,38 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
-
+@backcolor: lightgray;
 html, body {
 	height: 100%;
 }
+.flexCenter(){
+	display: flex;
+	justify-content: center;
+}
+
+.flexRight(){
+	display: flex;
+	justify-content: flex-end;
+}
+.container{
+	width:90%;
+	border: 1px solid black;
+	margin: 0 auto;
+}//closes container
+
+header{
+	nav{
+		.flexRight();
+		padding-right: 20px;
+		a{
+			padding: 20px;
+		}
+	}//closes nav
+
+	div{
+		background-color: @backcolor;
+	}
+}//closes header
 
