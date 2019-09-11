@@ -55,13 +55,24 @@ table {
 
 html, body {
 	height: 100%;
+	//font-size: 62.5%;
 }
 
+/*****************Begin styling*****************/
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
+
+//variables
 @backcolor: #edf2f7;
 
-.flexCenter(){
-	display: flex;
-	justify-content: center;
+@header-font: 'Fira Sans', sans-serif;
+
+@padpx: 20px;
+
+//mixins
+
+.stdPadding(){
+	padding: @padpx;
 }
 
 .flexRight(){
@@ -73,6 +84,8 @@ html, body {
 	width: 90%;
 	margin: 0 auto;
 }
+
+//Styles
 .container{
 	.centering();
 	border: 1px solid black;
@@ -85,7 +98,7 @@ header{
 		.flexRight();
 
 		a{
-			padding: 20px;
+			.stdPadding();
 			text-decoration: none;
 
 		}//closes anchor
@@ -98,14 +111,39 @@ header{
 .about-container{
 	.centering();
 	background-color: @backcolor;
-	padding: 20px;
+	.stdPadding();
 
 	.image{
-		padding: 20px 0;
+		padding: @padpx 0;
 		img{
 			max-width: 30%;
 		}//closes img
 	}//closes image
+
+	h1{
+		font-size: 2.2rem;
+		font-family: @header-font;
+		padding-bottom: @padpx;
+	}//closes h1
+
+	p{
+		
+		border-bottom: 1px solid black;
+		padding-bottom: @padpx;
+		font-size: 1.4rem;
+	}//closes p
+
+	button{
+		margin-top: @padpx;
+		border-radius: 5px;
+		padding: 10px;
+		background-color: crimson;
+		color: white;
+	}//closes button
+
+	button:hover{
+		background-color: blueviolet;
+	}//closes hover
 }//closes about-container
 
 
