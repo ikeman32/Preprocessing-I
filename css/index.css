@@ -136,17 +136,24 @@ body {
 }
 .container {
   width: 90%;
+  margin: 0 auto;
   border: 1px solid black;
+}
+header {
+  width: 90%;
   margin: 0 auto;
 }
 header nav {
   display: flex;
   justify-content: flex-end;
-  padding-right: 20px;
 }
 header nav a {
   padding: 20px;
+  text-decoration: none;
 }
-header div {
+.about div {
+  width: 90%;
+  margin: 0 auto;
   background-color: lightgray;
+  padding: 20px;
 }

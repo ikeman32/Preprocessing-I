@@ -52,10 +52,13 @@ table {
 * {
 	box-sizing: border-box;
 }
-@backcolor: lightgray;
+
 html, body {
 	height: 100%;
 }
+
+@backcolor: lightgray;
+
 .flexCenter(){
 	display: flex;
 	justify-content: center;
@@ -65,23 +68,37 @@ html, body {
 	display: flex;
 	justify-content: flex-end;
 }
-.container{
-	width:90%;
-	border: 1px solid black;
+
+.centering(){
+	width: 90%;
 	margin: 0 auto;
+}
+.container{
+	.centering();
+	border: 1px solid black;
+
 }//closes container
 
 header{
+	.centering();
 	nav{
 		.flexRight();
-		padding-right: 20px;
+
 		a{
 			padding: 20px;
-		}
+			text-decoration: none;
+
+		}//closes anchor
 	}//closes nav
 
-	div{
-		background-color: @backcolor;
-	}
+	
 }//closes header
+
+.about{
+	div{
+		.centering();
+		background-color: @backcolor;
+		padding: 20px;
+	}
+}
 
