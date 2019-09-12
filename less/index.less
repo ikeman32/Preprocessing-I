@@ -102,6 +102,11 @@ html, body {
 	padding-bottom: @padpx;
 }
 
+.padTB(){
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
 //Styles
 .container{
 	.centering();
@@ -209,14 +214,94 @@ header{
 	}//closes h2
 
 	.work-history{
+		max-width: 90%;
 		padding-left: @padpx;
 
 		table{
-			th{
-				
-			}
-		}
-	}
+			border-collapse: separate;
+			border-spacing: 0 10px;
+			width: 100%;
+
+			.row0{
+				text-align: justify;
+				.head{
+					font-weight: bold;
+				}//closes head
+
+				.column1{
+					padding-left: 10%;
+				}//close column1
+
+				.column2{
+					padding-left: 10%;
+				}//closes column2
+
+				.column3{
+					padding-left: 10%;
+				}//closes column3
+
+			}//closes row0
+
+			.row1{
+				background-color: lightgray;
+				text-align: justify;
+
+				.column1{
+					padding-left: 10%;
+					.padTB();
+				}//close column1
+
+				.column2{
+					padding-left: 10%;
+				}//closes column2
+
+				.column3{
+					padding-left: 10%;
+				}//closes column3
+
+			}//closes row1
+
+			.row2{
+				text-align: justify;
+
+				.column1{
+					padding-left: 10%;
+				}//close column1
+
+				.column2{
+					padding-left: 10%;
+				}//closes column2
+
+				.column3{
+					padding-left: 10%;
+				}//closes column3
+
+			}//closes row2
+
+			.row3{
+				text-align: justify;
+				background-color: lightgray;
+		
+
+				.column1{
+					padding-left: 10%;
+					.padTB();
+				}//close column1
+
+				.column2{
+					padding-left: 10%;
+				}//closes column2
+
+				.column3{
+					padding-left: 10%;
+				}//closes column3
+
+			}//closes row3
+			
+
+			
+		}//close table
+	}//closes work-history
 }//closes bottom-container
 
 

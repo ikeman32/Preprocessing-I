@@ -235,5 +235,68 @@ header nav a {
   padding-left: 20px;
 }
 .bottom-container .work-history {
+  max-width: 90%;
   padding-left: 20px;
+}
+.bottom-container .work-history table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  width: 100%;
+}
+.bottom-container .work-history table .row0 {
+  text-align: justify;
+}
+.bottom-container .work-history table .row0 .head {
+  font-weight: bold;
+}
+.bottom-container .work-history table .row0 .column1 {
+  padding-left: 10%;
+}
+.bottom-container .work-history table .row0 .column2 {
+  padding-left: 10%;
+}
+.bottom-container .work-history table .row0 .column3 {
+  padding-left: 10%;
+}
+.bottom-container .work-history table .row1 {
+  background-color: lightgray;
+  text-align: justify;
+}
+.bottom-container .work-history table .row1 .column1 {
+  padding-left: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.bottom-container .work-history table .row1 .column2 {
+  padding-left: 10%;
+}
+.bottom-container .work-history table .row1 .column3 {
+  padding-left: 10%;
+}
+.bottom-container .work-history table .row2 {
+  text-align: justify;
+}
+.bottom-container .work-history table .row2 .column1 {
+  padding-left: 10%;
+}
+.bottom-container .work-history table .row2 .column2 {
+  padding-left: 10%;
+}
+.bottom-container .work-history table .row2 .column3 {
+  padding-left: 10%;
+}
+.bottom-container .work-history table .row3 {
+  text-align: justify;
+  background-color: lightgray;
+}
+.bottom-container .work-history table .row3 .column1 {
+  padding-left: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.bottom-container .work-history table .row3 .column2 {
+  padding-left: 10%;
+}
+.bottom-container .work-history table .row3 .column3 {
+  padding-left: 10%;
 }
