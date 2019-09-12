@@ -145,7 +145,6 @@ body {
 .container {
   width: 90%;
   margin: 0 auto;
-  border: 1px solid black;
 }
 header {
   width: 90%;
@@ -156,8 +155,18 @@ header nav {
   justify-content: flex-end;
 }
 header nav a {
-  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-decoration: none;
+  color: crimson;
+}
+header nav a:hover {
+  color: blueviolet;
+  border: 1px lightgrey;
+  background-color: aqua;
+  border-radius: 10px;
 }
 .about-container {
   width: 90%;
@@ -242,6 +251,7 @@ header nav a {
   border-collapse: separate;
   border-spacing: 0 10px;
   width: 100%;
+  padding-left: 20px;
 }
 .bottom-container .work-history table .row0 {
   text-align: justify;
@@ -299,4 +309,19 @@ header nav a {
 }
 .bottom-container .work-history table .row3 .column3 {
   padding-left: 10%;
+}
+footer {
+  margin-top: 20px;
+}
+footer .copyright {
+  width: 90%;
+  margin: 0 auto;
+  background-color: lightseagreen;
+  padding: 20px;
+}
+footer .copyright p {
+  text-align: center;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1.4rem;
 }

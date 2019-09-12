@@ -110,7 +110,6 @@ html, body {
 //Styles
 .container{
 	.centering();
-	border: 1px solid black;
 
 }//closes container
 
@@ -120,10 +119,20 @@ header{
 		.flexRight();
 
 		a{
-			.stdPadding();
+			.padTB();
+			padding-left: @padpx;
+			padding-right: @padpx;
 			text-decoration: none;
+			color: crimson;
 
 		}//closes anchor
+
+		a:hover{
+			color: blueviolet;
+			border: 1px lightgrey;
+			background-color: aqua;
+			border-radius: 10px;
+		}
 	}//closes nav
 
 	
@@ -221,6 +230,7 @@ header{
 			border-collapse: separate;
 			border-spacing: 0 10px;
 			width: 100%;
+			padding-left: @padpx;
 
 			.row0{
 				text-align: justify;
@@ -303,5 +313,22 @@ header{
 		}//close table
 	}//closes work-history
 }//closes bottom-container
+
+footer{
+	margin-top: @padpx;
+	.copyright{
+		
+		.centering();
+		background-color: lightseagreen;
+		padding: @padpx;
+
+		p{
+			text-align: center;
+			color: whitesmoke;
+			font-weight: bold;
+			font-size: 1.4rem
+		}//closes p
+	}//closes copyright
+}//closes footer
 
 
