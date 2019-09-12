@@ -111,6 +111,10 @@ html, body {
 .container{
 	.centering();
 
+	@media (max-width: 500px;) {
+		width: 100%;
+	}
+
 }//closes container
 
 header{
@@ -144,15 +148,27 @@ header{
 	background-color: @backcolor;
 	.stdPadding();
 
+	
+
 	.image{
 		padding: @padpx 0;
+		@media(max-width: 500px){
+			padding: @padpx 50px;
+		}
 		img{
 			max-width: 30%;
+			@media(max-width: 500px){
+				max-width: 100%;
+
+			}//closes breakpoint
 		}//closes img
 	}//closes image
 
 	h1{
 		.h1styles();
+		@media(max-width: 500px){
+			font-size: 1.6rem;
+		}
 	}//closes h1
 
 	#tech{
@@ -160,11 +176,17 @@ header{
 		border-bottom: 1px solid black;
 		padding-bottom: @padpx;
 		font-size: 1.4rem;
+
+		@media (max-width: 500px) {
+			margin-left: 40px;
+			border-bottom: none;
+		}
+		
 	}//closes tech
 
 	#teamup{
 		margin-top: @padpx;
-	}
+	}//closes teamup
 
 	button{
 		margin-top: @padpx;
@@ -177,16 +199,26 @@ header{
 	button:hover{
 		background-color: blueviolet;
 	}//closes hover
+
+	
 }//closes about-container
 
 .mid-container{
 	.centering();
 	.flexRow();
 
+	@media(max-width: 500px){
+		flex-direction: column;
+	}//closes breakpoint
+
 	.mid-left{
 		.stdPadding();
 		max-width: 40%;
-		
+
+		@media(max-width: 500px){
+			max-width: 100%;
+		}//closes breakpoint
+	
 		h2{
 			.h2styles();
 		}//closes h2
@@ -198,7 +230,6 @@ header{
 
 	.mid-right{
 		.stdPadding();
-
 		margin-left: 10%;
 
 		h2{
@@ -219,17 +250,25 @@ header{
 	
 	h2{
 		.h2styles();
-		padding-left: @padpx
+		padding-left: @padpx;
+		@media(max-width: 500px){
+			padding-left: 20%;
+		}
 	}//closes h2
 
 	.work-history{
 		max-width: 90%;
 		padding-left: @padpx;
 
+		@media(max-width: 500px){
+			padding-left: 5%;
+		}//closes breakpoint
+
 		table{
 			border-collapse: separate;
 			border-spacing: 0 10px;
 			width: 100%;
+			
 			padding-left: @padpx;
 
 			.row0{
