@@ -145,6 +145,7 @@ body {
 .container {
   width: 90%;
   margin: 0 auto;
+  border: 1px solid black;
 }
 header {
   width: 90%;
@@ -155,18 +156,8 @@ header nav {
   justify-content: flex-end;
 }
 header nav a {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
   text-decoration: none;
-  color: crimson;
-}
-header nav a:hover {
-  color: blueviolet;
-  border: 1px lightgrey;
-  background-color: aqua;
-  border-radius: 10px;
 }
 .about-container {
   width: 90%;
@@ -177,39 +168,18 @@ header nav a:hover {
 .about-container .image {
   padding: 20px 0;
 }
-@media (max-width: 500px) {
-  .about-container .image {
-    padding: 20px 50px;
-  }
-}
 .about-container .image img {
   max-width: 30%;
-}
-@media (max-width: 500px) {
-  .about-container .image img {
-    max-width: 100%;
-  }
 }
 .about-container h1 {
   font-size: 2.2rem;
   font-family: 'Fira Sans', sans-serif;
   padding-bottom: 20px;
 }
-@media (max-width: 500px) {
-  .about-container h1 {
-    font-size: 1.6rem;
-  }
-}
 .about-container #tech {
   border-bottom: 1px solid black;
   padding-bottom: 20px;
   font-size: 1.4rem;
-}
-@media (max-width: 500px) {
-  .about-container #tech {
-    margin-left: 40px;
-    border-bottom: none;
-  }
 }
 .about-container #teamup {
   margin-top: 20px;
@@ -230,19 +200,9 @@ header nav a:hover {
   display: flex;
   justify-content: first baseline;
 }
-@media (max-width: 500px) {
-  .mid-container {
-    flex-direction: column;
-  }
-}
 .mid-container .mid-left {
   padding: 20px;
   max-width: 40%;
-}
-@media (max-width: 500px) {
-  .mid-container .mid-left {
-    max-width: 100%;
-  }
 }
 .mid-container .mid-left h2 {
   font-size: 1.8rem;
@@ -267,102 +227,6 @@ header nav a:hover {
 .bottom-container {
   width: 90%;
   margin: 0 auto;
-}
-.bottom-container h2 {
-  font-size: 1.8rem;
-  font-family: 'Fira Sans', sans-serif;
-  padding-bottom: 20px;
-  padding-left: 20px;
-}
-@media (max-width: 500px) {
-  .bottom-container h2 {
-    padding-left: 20%;
-  }
-}
-.bottom-container .work-history {
-  max-width: 90%;
-  padding-left: 20px;
-}
-@media (max-width: 500px) {
-  .bottom-container .work-history {
-    padding-left: 5%;
-  }
-}
-.bottom-container .work-history table {
-  border-collapse: separate;
-  border-spacing: 0 10px;
-  width: 100%;
-  padding-left: 20px;
-}
-.bottom-container .work-history table .row0 {
-  text-align: justify;
-}
-.bottom-container .work-history table .row0 .head {
-  font-weight: bold;
-}
-.bottom-container .work-history table .row0 .column1 {
-  padding-left: 10%;
-}
-.bottom-container .work-history table .row0 .column2 {
-  padding-left: 10%;
-}
-.bottom-container .work-history table .row0 .column3 {
-  padding-left: 10%;
-}
-.bottom-container .work-history table .row1 {
-  background-color: lightgray;
-  text-align: justify;
-}
-.bottom-container .work-history table .row1 .column1 {
-  padding-left: 10%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.bottom-container .work-history table .row1 .column2 {
-  padding-left: 10%;
-}
-.bottom-container .work-history table .row1 .column3 {
-  padding-left: 10%;
-}
-.bottom-container .work-history table .row2 {
-  text-align: justify;
-}
-.bottom-container .work-history table .row2 .column1 {
-  padding-left: 10%;
-}
-.bottom-container .work-history table .row2 .column2 {
-  padding-left: 10%;
-}
-.bottom-container .work-history table .row2 .column3 {
-  padding-left: 10%;
-}
-.bottom-container .work-history table .row3 {
-  text-align: justify;
-  background-color: lightgray;
-}
-.bottom-container .work-history table .row3 .column1 {
-  padding-left: 10%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.bottom-container .work-history table .row3 .column2 {
-  padding-left: 10%;
-}
-.bottom-container .work-history table .row3 .column3 {
-  padding-left: 10%;
-}
-footer {
-  margin-top: 20px;
-}
-footer .copyright {
-  width: 90%;
-  margin: 0 auto;
-  background-color: lightseagreen;
-  padding: 20px;
-}
-footer .copyright p {
-  text-align: center;
-  color: whitesmoke;
-  font-weight: bold;
-  font-size: 1.4rem;
+  display: flex;
+  justify-content: first baseline;
 }
